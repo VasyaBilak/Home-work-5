@@ -1,0 +1,37 @@
+
+.square {
+	width: 60px;
+	height: 60px;
+	background: #f20c27;
+	margin: 100px;
+	box-shadow: 0 0 4px rgba(o,0,0,.4);
+	animation-name: spin;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: 3;
+	animation-delay: 1s;
+	animation-direction: alternate;
+}
+.square:hover {
+	animation-play-state: paused;
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.color: {
+	width: 60px;
+	height: 60px;
+	background: #c8c8c8;
+	margin: 300px;
+}
+.color:hover {
+  background:#53ea93;
+}
+.border:hover {
+  box-shadow: inset 0 0 0 23px #53ea93;
+}
